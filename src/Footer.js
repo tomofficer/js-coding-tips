@@ -24,9 +24,9 @@ const Footer = () => {
   return (
     <div>
       <Box
-        bg="white"
+        bg="yellow.300"
         _dark={{
-          bg: 'gray.600',
+          bg: 'black',
         }}
       >
         <Stack
@@ -65,9 +65,9 @@ const Footer = () => {
               base: '12px',
               md: '16px',
             }}
-            color="gray.800"
+            color="black"
             _dark={{
-              color: 'white',
+              color: 'yellow.300',
             }}
             textAlign={{
               base: 'center',
@@ -91,9 +91,9 @@ const Footer = () => {
               base: '12px',
               md: '16px',
             }}
-            color="gray.800"
+            color="black"
             _dark={{
-              color: 'white',
+              color: 'yellow.300',
             }}
             textAlign={{
               base: 'center',
@@ -115,9 +115,9 @@ const Footer = () => {
         <Divider
           w="95%"
           mx="auto"
-          color="gray.600"
+          color="black"
           _dark={{
-            color: '#F9FAFB',
+            color: 'yellow.300',
           }}
           h="3.5px"
         />
@@ -127,6 +127,9 @@ const Footer = () => {
               <Icon
                 color="gray.800"
                 _dark={{
+                  color: 'white',
+                }}
+                _hover={{
                   color: 'white',
                 }}
                 h="20px"
@@ -143,6 +146,9 @@ const Footer = () => {
                 h="20px"
                 w="20px"
                 as={FaInstagram}
+                _hover={{
+                  color: 'white',
+                }}
               />
             </Link>
             <Link>
@@ -153,6 +159,9 @@ const Footer = () => {
                 h="20px"
                 w="20px"
                 as={FaTwitter}
+                _hover={{
+                  color: 'white',
+                }}
               />
             </Link>
             <Link>
@@ -163,6 +172,9 @@ const Footer = () => {
                 h="20px"
                 w="20px"
                 as={FaLinkedinIn}
+                _hover={{
+                  color: 'white',
+                }}
               />
             </Link>
           </HStack>
@@ -174,7 +186,8 @@ const Footer = () => {
               color: 'white',
             }}
           >
-            &copy;Copyright. All rights reserved.
+            &copy;Copyright JavaScript Coding Tips & Tom Officer. All rights
+            reserved.
           </Text>
         </VStack>
       </Box>
