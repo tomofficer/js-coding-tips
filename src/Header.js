@@ -386,7 +386,7 @@ const Header = () => {
                 Sign up
               </Button>
             </HStack>
-            {/* <IconButton
+            <IconButton
               size="md"
               fontSize="lg"
               aria-label={`Switch to ${text} mode`}
@@ -398,8 +398,8 @@ const Header = () => {
               }}
               onClick={toggleMode}
               icon={<SwitchIcon />}
-            /> */}
-            {/* <IconButton
+            />
+            <IconButton
               display={{
                 base: 'flex',
                 md: 'none',
@@ -413,7 +413,7 @@ const Header = () => {
               variant="ghost"
               // icon={<AiOutlineMenu />}
               onClick={mobileNav.onOpen}
-            /> */}
+            />
           </Box>
         </Flex>
 
