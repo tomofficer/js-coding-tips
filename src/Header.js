@@ -159,103 +159,6 @@ const Header = () => {
           Build strategic funnels that will drive your customers to convert
         </Section>
       </SimpleGrid>
-      <Box
-        px={{
-          base: 5,
-          sm: 8,
-        }}
-        py={5}
-        bg={hbg}
-        display={{
-          sm: 'flex',
-        }}
-      >
-        <Stack
-          direction={{
-            base: 'row',
-          }}
-          spacing={{
-            base: 6,
-            sm: 10,
-          }}
-        >
-          <Box display="flow-root">
-            <Link
-              m={-3}
-              p={3}
-              display="flex"
-              alignItems="center"
-              rounded="md"
-              fontSize="md"
-              color={tcl}
-              _hover={{
-                bg: hbgh,
-              }}
-            >
-              <chakra.svg
-                flexShrink={0}
-                h={6}
-                w={6}
-                color="gray.400"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  stroke-w="2"
-                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  stroke-w="2"
-                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </chakra.svg>
-              <chakra.span ml={3}>Watch Demo</chakra.span>
-            </Link>
-          </Box>
-
-          <Box display="flow-root">
-            <Link
-              m={-3}
-              p={3}
-              display="flex"
-              alignItems="center"
-              rounded="md"
-              fontSize="md"
-              color={tcl}
-              _hover={{
-                bg: hbgh,
-              }}
-            >
-              <chakra.svg
-                flexShrink={0}
-                h={6}
-                w={6}
-                color="gray.400"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  stroke-w="2"
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </chakra.svg>
-              <chakra.span ml={3}>Contact Sales</chakra.span>
-            </Link>
-          </Box>
-        </Stack>
-      </Box>
     </React.Fragment>
   );
   const MobileNavContent = (
@@ -321,13 +224,14 @@ const Header = () => {
                   fontSize="md"
                   _hover={{
                     color: headerTextHover,
+                    transform: 'scale(1.1)',
                   }}
                   _focus={{
                     boxShadow: 'none',
                   }}
                   // rightIcon={<IoIosArrowDown />}
                 >
-                  Features
+                  Blog
                 </Button>
                 <Box
                   pos="absolute"
@@ -349,12 +253,13 @@ const Header = () => {
                 fontSize="md"
                 _hover={{
                   color: headerTextHover,
+                  transform: 'scale(1.1)',
                 }}
                 _focus={{
                   boxShadow: 'none',
                 }}
               >
-                Blog
+                Resources
               </Button>
               <Button
                 bg={bg}
@@ -364,28 +269,47 @@ const Header = () => {
                 fontSize="md"
                 _hover={{
                   color: headerTextHover,
+                  transform: 'scale(1.1)',
                 }}
                 _focus={{
                   boxShadow: 'none',
                 }}
               >
-                Pricing
+                About
+              </Button>
+              <Button
+                bg={bg}
+                color={headerText}
+                display="inline-flex"
+                alignItems="center"
+                fontSize="md"
+                _hover={{
+                  color: headerTextHover,
+                  transform: 'scale(1.1)',
+                }}
+                _focus={{
+                  boxShadow: 'none',
+                }}
+              >
+                Contact
               </Button>
             </HStack>
           </Box>
           <Spacer />
           <Box display="flex" alignItems="center">
             <HStack spacing={1}>
-              <Button colorScheme="brand" variant="ghost" size="sm">
-                Sign in
-              </Button>
               <Button
                 colorScheme="brand"
                 variant="solid"
                 size="sm"
-                color="black"
+                color="white"
+                bg={'black'}
+                _hover={{
+                  color: 'yellow.300',
+                  transform: 'scale(1.1)',
+                }}
               >
-                Sign up
+                Subscribe
               </Button>
             </HStack>
             <IconButton

@@ -112,7 +112,7 @@ const Footer = () => {
             </Flex>
           </HStack>
         </Stack>
-        <Divider
+        {/* <Divider
           w="95%"
           mx="auto"
           color="black"
@@ -120,8 +120,8 @@ const Footer = () => {
             color: 'yellow.300',
           }}
           h="3.5px"
-        />
-        <VStack py={3}>
+        /> */}
+        <VStack py={0}>
           <HStack justify="center">
             <Link>
               <Icon
@@ -164,7 +164,10 @@ const Footer = () => {
                 }}
               />
             </Link>
-            <Link>
+            <Link
+              href="https://www.linkedin.com/in/tomofficer/"
+              target={'_blank'}
+            >
               <Icon
                 _dark={{
                   color: 'white',
