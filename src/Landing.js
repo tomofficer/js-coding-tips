@@ -51,7 +51,7 @@ export default function Landing() {
           </Button>
         </Stack>
         <Flex w={'full'}></Flex>
-        <Image src="https://ik.imagekit.io/e16xo45jw/Blog/js1_LC9bJz9k0.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1662805889338" />
+        <Image src="https://ik.imagekit.io/e16xo45jw/Blog/js1a_lcOMm6WvG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662842125322" />
       </Stack>
     </Container>
   );
