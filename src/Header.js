@@ -230,8 +230,9 @@ const Header = () => {
                     boxShadow: 'none',
                   }}
                   // rightIcon={<IoIosArrowDown />}
+                  mr={8}
                 >
-                  Blog
+                  Latest Articles
                 </Button>
                 <Box
                   pos="absolute"
@@ -245,6 +246,22 @@ const Header = () => {
                   {Features}
                 </Box>
               </Box>
+              <Button
+                bg={bg}
+                color={headerText}
+                display="inline-flex"
+                alignItems="center"
+                fontSize="md"
+                _hover={{
+                  color: headerTextHover,
+                  transform: 'scale(1.1)',
+                }}
+                _focus={{
+                  boxShadow: 'none',
+                }}
+              >
+                Blog
+              </Button>
               <Button
                 bg={bg}
                 color={headerText}

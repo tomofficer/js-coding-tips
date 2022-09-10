@@ -10,6 +10,7 @@ import {
   VStack,
   Icon,
   Text,
+  Center,
 } from '@chakra-ui/react';
 import {
   FaFacebookF,
@@ -122,6 +123,7 @@ const Footer = () => {
           h="3.5px"
         /> */}
         <VStack py={0}>
+          <Text ml={2}>Follow me on</Text>
           <HStack justify="center">
             <Link>
               <Icon
@@ -151,7 +153,10 @@ const Footer = () => {
                 }}
               />
             </Link>
-            <Link>
+            <Link
+              href="https://www.linkedin.com/in/tomofficer/"
+              target={'_blank'}
+            >
               <Icon
                 _dark={{
                   color: 'white',
@@ -181,7 +186,8 @@ const Footer = () => {
               />
             </Link>
           </HStack>
-
+        </VStack>
+        <Center mt={3}>
           <Text
             textAlign="center"
             fontSize="smaller"
@@ -192,7 +198,7 @@ const Footer = () => {
             &copy;Copyright JavaScript Coding Tips & Tom Officer. All rights
             reserved.
           </Text>
-        </VStack>
+        </Center>
       </Box>
       ;
     </div>
