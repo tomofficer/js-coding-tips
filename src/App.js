@@ -2,6 +2,7 @@ import React from 'react';
 import { ChakraProvider, Box, VStack, Grid, theme } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <VStack spacing={8}></VStack>
         </Grid>
       </Box>
+      <Footer />
     </ChakraProvider>
   );
 }
