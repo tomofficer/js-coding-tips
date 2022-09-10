@@ -19,8 +19,10 @@ import {
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const Header = () => {
-  const bg = useColorModeValue('white', 'gray.800');
-  const cl = useColorModeValue('gray.800', 'white');
+  const bg = useColorModeValue('yellow.300', 'black');
+  const cl = useColorModeValue('black', 'white');
+  const headerText = useColorModeValue('black', 'yellow.300');
+  const headerTextHover = useColorModeValue('white', 'white');
   const mobileNav = useDisclosure();
   const { toggleColorMode: toggleMode } = useColorMode();
   const text = useColorModeValue('dark', 'light');
@@ -40,7 +42,7 @@ const Header = () => {
         alignItems="start"
         rounded="lg"
         _hover={{
-          bg: hbg,
+          bg: 'hbg',
         }}
       >
         <chakra.svg
@@ -314,11 +316,11 @@ const Header = () => {
               <Box role="group">
                 <Button
                   bg={bg}
-                  color="gray.500"
+                  color={headerText}
                   alignItems="center"
                   fontSize="md"
                   _hover={{
-                    color: cl,
+                    color: headerTextHover,
                   }}
                   _focus={{
                     boxShadow: 'none',
@@ -341,12 +343,12 @@ const Header = () => {
               </Box>
               <Button
                 bg={bg}
-                color="gray.500"
+                color={headerText}
                 display="inline-flex"
                 alignItems="center"
                 fontSize="md"
                 _hover={{
-                  color: cl,
+                  color: headerTextHover,
                 }}
                 _focus={{
                   boxShadow: 'none',
@@ -356,12 +358,12 @@ const Header = () => {
               </Button>
               <Button
                 bg={bg}
-                color="gray.500"
+                color={headerText}
                 display="inline-flex"
                 alignItems="center"
                 fontSize="md"
                 _hover={{
-                  color: cl,
+                  color: headerTextHover,
                 }}
                 _focus={{
                   boxShadow: 'none',
