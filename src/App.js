@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { ChakraProvider, Box, VStack, Grid, theme } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Header from './Header';
@@ -8,11 +8,19 @@ import ArticlePreview from './ArticlePreview';
 import Subscribe from './Subscribe';
 
 function App() {
+  //useRef
+  const scrollToBlogRef = useRef();
+
+  //scroll handlers
+  const scrollToBlogHandle = () => {
+    scrollToBlogRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <ChakraProvider theme={theme}>
       <Box backgroundColor={'yellow.300'}>
         <Header />
-        <Landing />
+        <Landing blogHandle={scrollToBlogHandle} blogRef={scrollToBlogRef} />
         <ArticlePreview />
         {/* <Box textAlign="center" fontSize="xl">
           <Grid minH="100vh" p={3}>

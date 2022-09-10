@@ -1,5 +1,14 @@
 import React from 'react';
-import { Flex, Box, Image, chakra, Link } from '@chakra-ui/react';
+import {
+  Flex,
+  Box,
+  Image,
+  chakra,
+  Link,
+  Heading,
+  Text,
+  Center,
+} from '@chakra-ui/react';
 
 const ArticlePreview = () => {
   const articleData = [
@@ -22,6 +31,26 @@ const ArticlePreview = () => {
   ];
   return (
     <>
+      <Box w="full" bg="black" py={12}>
+        <Center>
+          <Heading
+            pb={5}
+            bg={'black'}
+            fontWeight={600}
+            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+            lineHeight={'110%'}
+          >
+            <Text as={'span'} color={'white'}>
+              {'< '} Welcome To{' '}
+            </Text>
+            <Text as={'span'} color={'yellow'}>
+              JavaScript Coding Tips{' /> '}
+            </Text>
+            {/* JavaScript Coding Tips */}
+          </Heading>
+        </Center>
+      </Box>
+
       {articleData.map(article => (
         <>
           <Flex

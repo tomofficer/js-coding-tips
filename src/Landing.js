@@ -8,7 +8,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 
-export default function Landing() {
+export default function Landing({ blogRef, blogHandle }) {
   return (
     <Container maxW={'5xl'}>
       <Stack
@@ -17,7 +17,7 @@ export default function Landing() {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 40 }}
       >
-        <Heading
+        {/* <Heading
           fontWeight={600}
           fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
@@ -26,7 +26,7 @@ export default function Landing() {
             Welcome To{' '}
           </Text>
           JavaScript Coding Tips
-        </Heading>
+        </Heading> */}
         <Text color={'gray.500'} maxW={'3xl'}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sunt
           consectetur in dolore sapiente a illo aut quo. Adipisci molestiae
@@ -39,6 +39,7 @@ export default function Landing() {
             colorScheme={'orange'}
             bg={'black'}
             _hover={{ bg: 'white', color: 'black', transform: 'scale(1.1)' }}
+            onClick={() => blogHandle()}
           >
             Get started
           </Button>
@@ -52,7 +53,20 @@ export default function Landing() {
         </Stack>
         <Flex w={'full'}></Flex>
         <Image src="https://ik.imagekit.io/e16xo45jw/Blog/js1a_lcOMm6WvG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662842125322" />
+        <div ref={blogRef} pt={10}></div>
       </Stack>
+      {/* <Heading
+        pb={5}
+        fontWeight={600}
+        fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+        lineHeight={'110%'}
+      >
+        <Text as={'span'} color={'white'}>
+          Welcome To{' '}
+        </Text>
+        JavaScript Coding Tips
+      </Heading> */}
+      <div ref={blogRef}></div>
     </Container>
   );
 }

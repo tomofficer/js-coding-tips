@@ -250,7 +250,7 @@ const Header = () => {
   //JSX Return
   return (
     <React.Fragment>
-      <Box>
+      <Box position="sticky" top={0} zindex={10}>
         <chakra.header
           h="full"
           bg={bg}
