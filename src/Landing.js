@@ -53,7 +53,6 @@ export default function Landing({ blogRef, blogHandle }) {
         </Stack>
         <Flex w={'full'}></Flex>
         <Image src="https://ik.imagekit.io/e16xo45jw/Blog/js1a_lcOMm6WvG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662842125322" />
-        <div ref={blogRef} pt={10}></div>
       </Stack>
       {/* <Heading
         pb={5}

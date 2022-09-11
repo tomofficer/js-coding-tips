@@ -18,7 +18,7 @@ import {
 } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-const Header = () => {
+const Header = ({ blogHandle }) => {
   const bg = useColorModeValue('yellow.300', 'black');
   const cl = useColorModeValue('black', 'white');
   const headerText = useColorModeValue('black', 'yellow.300');
@@ -316,6 +316,7 @@ const Header = () => {
                   _focus={{
                     boxShadow: 'none',
                   }}
+                  onClick={() => blogHandle()}
                 >
                   Blog
                 </Button>

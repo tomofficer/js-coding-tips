@@ -19,9 +19,9 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Box backgroundColor={'yellow.300'}>
-        <Header />
+        <Header blogHandle={scrollToBlogHandle} />
         <Landing blogHandle={scrollToBlogHandle} blogRef={scrollToBlogRef} />
-        <ArticlePreview />
+        <ArticlePreview blogRef={scrollToBlogRef} />
         {/* <Box textAlign="center" fontSize="xl">
           <Grid minH="100vh" p={3}>
             
