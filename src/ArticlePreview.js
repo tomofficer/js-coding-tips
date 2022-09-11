@@ -47,7 +47,6 @@ const ArticlePreview = ({ blogRef, signUpRef }) => {
             <Text as={'span'} color={'yellow'}>
               JavaScript Coding Tips{' /> '}
             </Text>
-            {/* JavaScript Coding Tips */}
           </Heading>
         </Center>
       </Box>
