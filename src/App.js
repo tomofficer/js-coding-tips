@@ -18,10 +18,6 @@ function App() {
     scrollToBlogRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const scrollToHomeHandle = () => {
-    scrollToHomeRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
-
   const scrollToSignUpHandle = () => {
     scrollToSignUpRef.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -31,14 +27,9 @@ function App() {
       <Box backgroundColor={'yellow.300'}>
         <Header
           blogHandle={scrollToBlogHandle}
-          homeHandle={scrollToHomeHandle}
           signUpHandle={scrollToSignUpHandle}
         />
-        <Landing
-          blogHandle={scrollToBlogHandle}
-          blogRef={scrollToBlogRef}
-          homeRef={scrollToHomeRef}
-        />
+        <Landing blogHandle={scrollToBlogHandle} blogRef={scrollToBlogRef} />
         <ArticlePreview
           blogRef={scrollToBlogRef}
           signUpRef={scrollToSignUpRef}

@@ -34,6 +34,13 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
   const dcl = useColorModeValue('gray.500', 'gray.50');
   const hbgh = useColorModeValue('gray.100', 'brand.500');
 
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const Section = props => {
     return (
       <Link
@@ -318,7 +325,7 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
                   _focus={{
                     boxShadow: 'none',
                   }}
-                  onClick={() => homeHandle()}
+                  onClick={() => goToTop()}
                 >
                   Home
                 </Button>

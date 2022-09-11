@@ -15,6 +15,7 @@ import './App.css';
 export default function Landing({ blogRef, blogHandle, homeRef }) {
   return (
     <>
+      <div ref={homeRef}></div>
       <Box
         backgroundImage="url('https://ik.imagekit.io/e16xo45jw/Blog/christina-wocintechchat-com-9-ohfp-Dicg-unsplash_Ab-dVQu9_.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662870339572')"
         backgroundPosition={'center'}
@@ -36,19 +37,3 @@ export default function Landing({ blogRef, blogHandle, homeRef }) {
     </>
   );
 }
-
-//  <Container maxW={'5xl'} zIndex={0} ref={homeRef}>
-//    <Stack
-//      textAlign={'left'}
-//      align={'left'}
-//      spacing={{ base: 8, md: 10 }}
-//      py={{ base: 20, md: 40 }}
-//      // pt={{ base: 20, md: 40 }}
-//    >
-//      <Text color={'gray.500'} maxW={'3xl'}>
-//        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vero
-//        illum aliquid totam quas minima eveniet laboriosam. Veniam, sit
-//        obcaecati.
-//      </Text>
-//    </Stack>
-//  </Container>;

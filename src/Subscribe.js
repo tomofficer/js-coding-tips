@@ -13,9 +13,11 @@ import {
   Text,
 } from '@chakra-ui/react';
 
+//todo test top box margin on larger screen
+
 const Subscribe = () => {
   return (
-    <Box px={4} py={32} mx="auto" bg={'black'}>
+    <Box px={4} py={'90px'} mx="auto" bg={'black'}>
       <Box
         w={{
           base: 'full',
