@@ -11,6 +11,7 @@ function App() {
   //useRef
   const scrollToBlogRef = useRef();
   const scrollToHomeRef = useRef();
+  const scrollToSignUpRef = useRef();
 
   //scroll handlers
   const scrollToBlogHandle = () => {
@@ -21,19 +22,27 @@ function App() {
     scrollToHomeRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToSignUpHandle = () => {
+    scrollToSignUpRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <ChakraProvider theme={theme}>
       <Box backgroundColor={'yellow.300'}>
         <Header
           blogHandle={scrollToBlogHandle}
           homeHandle={scrollToHomeHandle}
+          signUpHandle={scrollToSignUpHandle}
         />
         <Landing
           blogHandle={scrollToBlogHandle}
           blogRef={scrollToBlogRef}
           homeRef={scrollToHomeRef}
         />
-        <ArticlePreview blogRef={scrollToBlogRef} />
+        <ArticlePreview
+          blogRef={scrollToBlogRef}
+          signUpRef={scrollToSignUpRef}
+        />
         {/* <Box textAlign="center" fontSize="xl">
           <Grid minH="100vh" p={3}>
             

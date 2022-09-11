@@ -10,7 +10,7 @@ import {
   Center,
 } from '@chakra-ui/react';
 
-const ArticlePreview = ({ blogRef }) => {
+const ArticlePreview = ({ blogRef, signUpRef }) => {
   const articleData = [
     {
       title: 'How To Scroll To A Component In React Using the useRef Hook',
@@ -159,6 +159,7 @@ const ArticlePreview = ({ blogRef }) => {
               </Box>
             </Box>
           </Flex>
+          <div ref={signUpRef}></div>
         </>
       ))}
     </>

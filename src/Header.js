@@ -15,10 +15,11 @@ import {
   HStack,
   Spacer,
   IconButton,
+  Center,
 } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-const Header = ({ blogHandle, homeHandle }) => {
+const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
   const bg = useColorModeValue('yellow.300', 'black');
   const cl = useColorModeValue('black', 'white');
   const headerText = useColorModeValue('black', 'yellow.300');
@@ -288,7 +289,7 @@ const Header = ({ blogHandle, homeHandle }) => {
                       boxShadow: 'none',
                     }}
                     // rightIcon={<IoIosArrowDown />}
-                    mr={8}
+                    // mr={10}
                   >
                     Latest Articles
                   </Button>
@@ -349,43 +350,63 @@ const Header = ({ blogHandle, homeHandle }) => {
                   _focus={{
                     boxShadow: 'none',
                   }}
+                  onClick={() => signUpHandle()}
                 >
-                  Resources
-                </Button>
-                <Button
-                  bg="none"
-                  color={headerText}
-                  display="inline-flex"
-                  alignItems="center"
-                  fontSize="md"
-                  _hover={{
-                    transform: 'scale(1.1)',
-                  }}
-                  _focus={{
-                    boxShadow: 'none',
-                  }}
-                >
-                  About
-                </Button>
-                <Button
-                  bg="none"
-                  color={headerText}
-                  display="inline-flex"
-                  alignItems="center"
-                  fontSize="md"
-                  _hover={{
-                    transform: 'scale(1.1)',
-                  }}
-                  _focus={{
-                    boxShadow: 'none',
-                  }}
-                >
-                  Contact
+                  Sign up
                 </Button>
               </HStack>
             </Box>
             <Spacer />
+
             <Box display="flex" alignItems="center">
+              <Button
+                bg="none"
+                color={headerText}
+                display="inline-flex"
+                alignItems="center"
+                fontSize="md"
+                _hover={{
+                  transform: 'scale(1.1)',
+                }}
+                _focus={{
+                  boxShadow: 'none',
+                }}
+              >
+                Resources
+              </Button>
+              <Button
+                bg="none"
+                color={headerText}
+                display="inline-flex"
+                alignItems="center"
+                fontSize="md"
+                _hover={{
+                  transform: 'scale(1.1)',
+                }}
+                _focus={{
+                  boxShadow: 'none',
+                }}
+              >
+                About
+              </Button>
+              <Button
+                bg="none"
+                color={headerText}
+                display="inline-flex"
+                alignItems="center"
+                fontSize="md"
+                _hover={{
+                  transform: 'scale(1.1)',
+                }}
+                _focus={{
+                  boxShadow: 'none',
+                }}
+              >
+                Contact
+              </Button>
+            </Box>
+
+            <Box display="flex" alignItems="center" ml={5}>
               <HStack spacing={1}>
                 <Button
                   colorScheme="brand"

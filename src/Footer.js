@@ -195,8 +195,8 @@ const Footer = () => {
               color: 'white',
             }}
           >
-            &copy;Copyright JavaScript Coding Tips & Tom Officer. All rights
-            reserved.
+            &copy;2022 Tom Officer | JavaScript Coding Tips | All rights
+            reserved
           </Text>
         </Center>
       </Box>
