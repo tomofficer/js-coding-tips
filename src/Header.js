@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   useColorModeValue,
   useDisclosure,
@@ -18,7 +18,7 @@ import {
 } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-const Header = ({ blogHandle }) => {
+const Header = ({ blogHandle, homeHandle }) => {
   const bg = useColorModeValue('yellow.300', 'black');
   const cl = useColorModeValue('black', 'white');
   const headerText = useColorModeValue('black', 'yellow.300');
@@ -250,7 +250,7 @@ const Header = ({ blogHandle }) => {
   //JSX Return
   return (
     <React.Fragment>
-      <Box position="sticky" top={0} zindex={10}>
+      <Box position="sticky" top={0} borderBottom="1px solid black">
         <chakra.header
           h="full"
           bg={bg}
@@ -300,10 +300,27 @@ const Header = ({ blogHandle }) => {
                     _groupHover={{
                       display: 'block',
                     }}
+                    pt={3}
                   >
                     {Features}
                   </Box>
                 </Box>
+                <Button
+                  bg="none"
+                  color={headerText}
+                  display="inline-flex"
+                  alignItems="center"
+                  fontSize="md"
+                  _hover={{
+                    transform: 'scale(1.1)',
+                  }}
+                  _focus={{
+                    boxShadow: 'none',
+                  }}
+                  onClick={() => homeHandle()}
+                >
+                  Home
+                </Button>
                 <Button
                   bg="none"
                   color={headerText}
