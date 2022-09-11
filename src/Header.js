@@ -34,7 +34,8 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
   const dcl = useColorModeValue('gray.500', 'gray.50');
   const hbgh = useColorModeValue('gray.100', 'brand.500');
 
-  const goToTop = () => {
+  //home scroll handler
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -325,7 +326,7 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
                   _focus={{
                     boxShadow: 'none',
                   }}
-                  onClick={() => goToTop()}
+                  onClick={() => scrollToTop()}
                 >
                   Home
                 </Button>

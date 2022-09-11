@@ -15,7 +15,7 @@ import {
 
 //todo test top box margin on larger screen
 
-const Subscribe = () => {
+const SignUp = () => {
   return (
     <Box px={4} py={'90px'} mx="auto" bg={'black'}>
       <Box
@@ -131,4 +131,4 @@ const Subscribe = () => {
   );
 };
 
-export default Subscribe;
+export default SignUp;

@@ -5,7 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Landing from './Landing';
 import ArticlePreview from './ArticlePreview';
-import Subscribe from './Subscribe';
+import SignUp from './SignUp';
 
 function App() {
   //useRef
@@ -40,7 +40,7 @@ function App() {
             <VStack spacing={8}></VStack>
           </Grid>
         </Box> */}
-        <Subscribe />
+        <SignUp />
         <Footer />
       </Box>
     </ChakraProvider>

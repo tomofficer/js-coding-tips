@@ -15,7 +15,7 @@ import './App.css';
 export default function Landing({ blogRef, blogHandle, homeRef }) {
   return (
     <>
-      <div ref={homeRef}></div>
+      {/* <div ref={homeRef}></div> */}
       <Box
         backgroundImage="url('https://ik.imagekit.io/e16xo45jw/Blog/christina-wocintechchat-com-9-ohfp-Dicg-unsplash_Ab-dVQu9_.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662870339572')"
         backgroundPosition={'center'}
