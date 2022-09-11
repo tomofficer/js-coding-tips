@@ -5,6 +5,7 @@ import Landing from './Landing';
 import ArticlePreview from './ArticlePreview';
 import SignUp from './SignUp';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   //useRef

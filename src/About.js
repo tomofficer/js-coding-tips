@@ -10,10 +10,13 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react';
+import Header from './Header';
+import Footer from './Footer';
 
 const About = () => {
   return (
     <>
+      <Header />
       <Container maxW={'3xl'}>
         <Stack
           as={Box}
@@ -80,6 +83,7 @@ const About = () => {
           </Stack>
         </Stack>
       </Container>
+      <Footer />
     </>
   );
 };

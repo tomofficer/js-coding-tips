@@ -367,51 +367,57 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
             <Spacer />
 
             <Box display="flex" alignItems="center">
-              <Button
-                bg="none"
-                color={headerText}
-                display="inline-flex"
-                alignItems="center"
-                fontSize="md"
-                _hover={{
-                  transform: 'scale(1.1)',
-                }}
-                _focus={{
-                  boxShadow: 'none',
-                }}
-              >
-                Resources
-              </Button>
-              <Button
-                bg="none"
-                color={headerText}
-                display="inline-flex"
-                alignItems="center"
-                fontSize="md"
-                _hover={{
-                  transform: 'scale(1.1)',
-                }}
-                _focus={{
-                  boxShadow: 'none',
-                }}
-              >
-                About
-              </Button>
-              <Button
-                bg="none"
-                color={headerText}
-                display="inline-flex"
-                alignItems="center"
-                fontSize="md"
-                _hover={{
-                  transform: 'scale(1.1)',
-                }}
-                _focus={{
-                  boxShadow: 'none',
-                }}
-              >
-                Contact
-              </Button>
+              <a href="/resources">
+                <Button
+                  bg="none"
+                  color={headerText}
+                  display="inline-flex"
+                  alignItems="center"
+                  fontSize="md"
+                  _hover={{
+                    transform: 'scale(1.1)',
+                  }}
+                  _focus={{
+                    boxShadow: 'none',
+                  }}
+                >
+                  Resources
+                </Button>
+              </a>
+              <a href="/about">
+                <Button
+                  bg="none"
+                  color={headerText}
+                  display="inline-flex"
+                  alignItems="center"
+                  fontSize="md"
+                  _hover={{
+                    transform: 'scale(1.1)',
+                  }}
+                  _focus={{
+                    boxShadow: 'none',
+                  }}
+                >
+                  About
+                </Button>
+              </a>
+              <a href="/contact">
+                <Button
+                  bg="none"
+                  color={headerText}
+                  display="inline-flex"
+                  alignItems="center"
+                  fontSize="md"
+                  _hover={{
+                    transform: 'scale(1.1)',
+                  }}
+                  _focus={{
+                    boxShadow: 'none',
+                  }}
+                >
+                  Contact
+                </Button>
+              </a>
             </Box>
 
             <Box display="flex" alignItems="center" ml={5}>
