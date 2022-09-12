@@ -152,23 +152,6 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
                   About
                 </Button>
               </a>
-              <a href="/contact">
-                <Button
-                  bg="none"
-                  color={headerText}
-                  display="inline-flex"
-                  alignItems="center"
-                  fontSize="md"
-                  _hover={{
-                    transform: 'scale(1.1)',
-                  }}
-                  _focus={{
-                    boxShadow: 'none',
-                  }}
-                >
-                  Contact
-                </Button>
-              </a>
             </Box>
 
             <Box display="flex" alignItems="center" ml={5}>
