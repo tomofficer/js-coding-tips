@@ -19,6 +19,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaLaptopCode,
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -50,20 +51,22 @@ const Footer = () => {
           />
           <Text>Follow me on</Text>
           <HStack justify="center">
-            {/* <Link>
+            <Link
+              href="https://www.linkedin.com/in/tomofficer/"
+              target={'_blank'}
+            >
               <Icon
-                color="gray.800"
                 _dark={{
-                  color: 'white',
-                }}
-                _hover={{
                   color: 'white',
                 }}
                 h="25px"
                 w="25px"
-                as={FaFacebookF}
+                as={FaLinkedinIn}
+                _hover={{
+                  color: 'white',
+                }}
               />
-            </Link> */}
+            </Link>
 
             <Link>
               <Icon
@@ -94,17 +97,14 @@ const Footer = () => {
                 }}
               />
             </Link>
-            <Link
-              href="https://www.linkedin.com/in/tomofficer/"
-              target={'_blank'}
-            >
+            <Link href="https://www.tomofficer.com" target={'_blank'}>
               <Icon
                 _dark={{
                   color: 'white',
                 }}
                 h="25px"
                 w="25px"
-                as={FaLinkedinIn}
+                as={FaLaptopCode}
                 _hover={{
                   color: 'white',
                 }}
