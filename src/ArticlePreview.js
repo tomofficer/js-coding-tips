@@ -17,15 +17,23 @@ const ArticlePreview = ({ blogRef, signUpRef }) => {
       body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil, voluptates soluta reprehenderit maiores similique exercitationem saepe asperiores vel laboriosam, cupiditate laborum laudantium explicabo necessitatibus rem quidem adipisci magnam suscipit ducimus debitis praesentium doloremque aliquid in. Quis maiores exercitationem iure',
     },
     {
-      title: 'How To Do This Thing In Article 2',
+      title: 'React Key Commands To Speed Up Your Workflow',
       body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil, voluptates soluta reprehenderit maiores similique exercitationem saepe asperiores vel laboriosam, cupiditate laborum laudantium explicabo necessitatibus rem quidem adipisci magnam suscipit ducimus debitis praesentium doloremque aliquid in. Quis maiores exercitationem iure',
     },
     {
-      title: 'How To Do This Thing In Article 3',
+      title: 'React Hooks And How To Use Them',
       body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil, voluptates soluta reprehenderit maiores similique exercitationem saepe asperiores vel laboriosam, cupiditate laborum laudantium explicabo necessitatibus rem quidem adipisci magnam suscipit ducimus debitis praesentium doloremque aliquid in. Quis maiores exercitationem iure',
     },
     {
-      title: 'How To Do This Thing In Article 4',
+      title: 'How To Code A Modal Overlay In React',
+      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil, voluptates soluta reprehenderit maiores similique exercitationem saepe asperiores vel laboriosam, cupiditate laborum laudantium explicabo necessitatibus rem quidem adipisci magnam suscipit ducimus debitis praesentium doloremque aliquid in. Quis maiores exercitationem iure',
+    },
+    {
+      title: 'Setting Up An Email Capture With Mailchimp In React',
+      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil, voluptates soluta reprehenderit maiores similique exercitationem saepe asperiores vel laboriosam, cupiditate laborum laudantium explicabo necessitatibus rem quidem adipisci magnam suscipit ducimus debitis praesentium doloremque aliquid in. Quis maiores exercitationem iure',
+    },
+    {
+      title: 'How To Trigger Conditional ClassNames On State Change In React',
       body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil, voluptates soluta reprehenderit maiores similique exercitationem saepe asperiores vel laboriosam, cupiditate laborum laudantium explicabo necessitatibus rem quidem adipisci magnam suscipit ducimus debitis praesentium doloremque aliquid in. Quis maiores exercitationem iure',
     },
   ];
