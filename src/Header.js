@@ -366,7 +366,7 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
             </Box>
             <Spacer />
 
-            {/* <Box display="flex" alignItems="center">
+            <Box display="flex" alignItems="center">
               <a href="/resources">
                 <Button
                   bg="none"
@@ -384,7 +384,7 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
                   Resources
                 </Button>
               </a>
-              <a href="/about">
+              {/* <a href="/about">
                 <Button
                   bg="none"
                   color={headerText}
@@ -400,8 +400,8 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
                 >
                   About
                 </Button>
-              </a>
-            </Box> */}
+              </a> */}
+            </Box>
 
             <Box display="flex" alignItems="center" ml={5}>
               <HStack spacing={1}>
