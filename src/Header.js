@@ -384,7 +384,7 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
                   Resources
                 </Button>
               </a>
-              {/* <a href="/about">
+              <a href="/about">
                 <Button
                   bg="none"
                   color={headerText}
@@ -400,7 +400,7 @@ const Header = ({ blogHandle, homeHandle, signUpHandle }) => {
                 >
                   About
                 </Button>
-              </a> */}
+              </a>
             </Box>
 
             <Box display="flex" alignItems="center" ml={5}>
